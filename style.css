@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.red{
+    background-color: red;
+}
+
