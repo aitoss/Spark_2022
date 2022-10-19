@@ -142,8 +142,11 @@ section {
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
+#home{
+    margin-top: 160px;
+}
 .home_heading{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 96px;
     background: var(--linear_gradient);
     -webkit-background-clip: text;
@@ -163,12 +166,22 @@ section {
 }
 .home_para{
     margin-top: 30px;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
 }
 .tag{
-    font-size: 15px;
+    font-size: 28px;
+    font-weight: 400;
 }
-/* speaker section */
+#home img{
+    margin-left: 64px;
+}
+
+
+/* ----------------------------speaker section--------------------------- */
 
 .speaker_cont {
     position: relative;
