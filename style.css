@@ -1,6 +1,8 @@
 * {
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Noto+Sans+JP:wght@100&family=Poppins:wght@100;600&family=Quicksand&family=Roboto:wght@100;400&display=swap');
     padding: 0;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 section {
@@ -12,46 +14,199 @@ section {
     background-color: red;
 }
 
-/*---------------------------Event Section-----------------------------*/
-
-.out-box-event-card {
-    background: linear-gradient(90.82deg, #232531 0.55%, rgba(35, 37, 49, 0.9) 99.15%);
+:root {
+    --linear_gradient: linear-gradient(to right, #C70039 0%, #FF5733 100%);
+    --section_gradient: linear-gradient(90.82deg, #232531 0.55%, rgba(35, 37, 49, 0.9) 99.15%);
 }
 
-.card-graphica {
-    color: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
-    color: wheat;
+/* speaker section */
+#speaker {
+    background: var(--section_gradient);
+    margin: auto;
 }
 
-.nov {
-    color: white;
+.heading {
+    font-weight: 500;
+    font-size: 42px;
+    background: var(--linear_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
-.inner-content {
-    color: white;
+.line_under_heading {
+    height: 3px;
+    width: 149px;
+    margin-top: 20px;
+    background: var(--linear_gradient)
 }
 
-.main-card {
-    background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
-    filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
+.speaker_cont {
+    position: relative;
 }
 
-.rulebook,
-.resources {
-    background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
-    border-radius: 3px;
+.speaker_name {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 40px;
 }
 
 
-
-
-/*---------------------------Event Section Ends-----------------------------*/
-/*---------------------------Mentor Section-----------------------------*/
-.mcard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+:root {
+    --linear_gradient: linear-gradient(to right, #C70039 0%, #FF5733 100%);
+    --section_gradient: linear-gradient(90.82deg, #232531 0.55%, rgba(35, 37, 49, 0.9) 99.15%);
 }
 
-/*--------------------------Mentor Section Ends------------------------*/
+/* speaker section */
+#speaker {
+    background: var(--section_gradient);
+    margin: auto;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 42px;
+    background: var(--linear_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.line_under_heading {
+    height: 3px;
+    width: 149px;
+    margin-top: 20px;
+    background: var(--linear_gradient)
+}
+
+.speaker_cont {
+    position: relative;
+}
+
+.speaker_name {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.img_speaker {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.speaker_info {
+    width: 600px;
+    padding: 50px;
+}
+
+.speaker_social {
+    width: 150px;
+}
+
+.line {
+    width: 350px;
+    height: 3px;
+    background: var(--linear_gradient);
+}
+
+.line_spe {
+    rotate: 270deg;
+    height: auto;
+}
+
+.line_content {
+    font-weight: 200;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.speaker_post {
+    font-size: 30px;
+    background: var(--linear_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.speaker_content {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1399px) {
+    .speaker_info {
+        padding: 0px;
+    }
+
+    .line_speaker {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .speaker_name {
+        font-size: 25px;
+        left: 20px;
+        width: 50px;
+    }
+
+    .line_speaker {
+        visibility: hidden;
+    }
+
+    /* speaker section end */
+
+
+
+
+
+
+    /*---------------------------Event Section-----------------------------*/
+
+    .out-box-event-card {
+        background: linear-gradient(90.82deg, #232531 0.55%, rgba(35, 37, 49, 0.9) 99.15%);
+    }
+
+    .card-graphica {
+        color: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+        color: wheat;
+    }
+
+    .nov {
+        color: white;
+    }
+
+    .inner-content {
+        color: white;
+    }
+
+    .main-card {
+        background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
+        filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
+    }
+
+    .rulebook,
+    .resources {
+        background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+        border-radius: 3px;
+    }
+
+
+
+
+    /*---------------------------Event Section Ends-----------------------------*/
+    /*---------------------------Mentor Section-----------------------------*/
+    .mcard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*--------------------------Mentor Section Ends------------------------*/
