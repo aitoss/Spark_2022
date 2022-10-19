@@ -24,6 +24,9 @@ section {
     /* max-width: 1400px; */
     margin: 0 auto;  
 }
+.container{
+    color: white;
+}
 
 .heading {
     /* Use this class for the heading of each section */
@@ -138,6 +141,26 @@ section {
 
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
+/* ---------------------------------------------------------Home page start------------------------------------------------------- */
+.home_heading{
+    font-weight: 700;
+    font-size: 96px;
+    background: var(--linear_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+.home_heading > span{
+    font-family: 'Eczar' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 66px;
+    color: white !important;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: white;
+}
 /* speaker section */
 
 .speaker_cont {
