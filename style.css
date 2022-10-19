@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Noto+Sans+JP:wght@100&family=Poppins:wght@100;600&family=Quicksand&family=Roboto:wght@100;400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 section{
@@ -12,7 +15,97 @@ section{
     background-color: red;
 }
 
+:root{
+    --linear_gradient: linear-gradient(to right, #C70039 0%, #FF5733 100%);
+    --section_gradient: linear-gradient(90.82deg, #232531 0.55%, rgba(35, 37, 49, 0.9) 99.15%);
+}
+/* speaker section */
+#speaker{
+    background: var(--section_gradient);
+    margin: auto;
+}
+.heading{
+    font-weight: 500;
+    font-size: 42px;
+    background: var(--linear_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.line_under_heading{
+    height: 3px;
+    width: 149px;
+    margin-top: 20px;
+    background: var(--linear_gradient)
+}
+.speaker_cont{
+    position: relative;
+}
+.speaker_name{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 40px;
+}
 
+.img_speaker{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+.speaker_info{
+    width: 600px;
+    padding: 50px;
+}
+.speaker_social{
+    width: 150px;
+}
+.line{
+    width: 350px;
+    height: 3px;
+    background: var(--linear_gradient);
+}
+.line_spe{
+    rotate: 270deg;
+    height: auto;
+}
+.line_content{
+    font-weight: 200;
+    font-size: 16px;
+    color: #ffffff;
+}
+.speaker_post{
+    font-size: 30px;
+    background: var(--linear_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.speaker_content{
+    font-size: 16px;
+    color: #ffffff;
+}
+@media only screen and (max-width: 1399px) {
+    .speaker_info{
+        padding: 0px;
+    }
+    .line_speaker{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .speaker_name{
+        font-size: 25px;
+        left: 20px;
+        width: 50px;
+    }
+    .line_speaker{
+        visibility: hidden;
+    }
+
+}
+/* speaker section end */
 /*---------------------------Mentor Section-----------------------------*/
 .mcard{
     display: flex;
