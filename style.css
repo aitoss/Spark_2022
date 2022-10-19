@@ -12,3 +12,13 @@ section{
     background-color: red;
 }
 
+
+/*---------------------------Mentor Section-----------------------------*/
+.mcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------Mentor Section Ends------------------------*/
