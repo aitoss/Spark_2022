@@ -11,16 +11,17 @@
 }
 
 /* --------------------------- Some universal classes including various container structures and heading formating ----------------------------*/
-body{    
+body {
     background: var(--section_gradient);
 }
 
 section {
     max-width: 1400px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
-.heading { /* Use this class for the heading of each section */
+.heading {
+    /* Use this class for the heading of each section */
     font-weight: 500;
     font-size: 42px;
     background: var(--linear_gradient);
@@ -29,7 +30,8 @@ section {
     display: inline-block;
 }
 
-.line_under_heading { /* Use this class for the line under the heading of each section */
+.line_under_heading {
+    /* Use this class for the line under the heading of each section */
     height: 3px;
     width: 149px;
     margin-top: 20px;
@@ -112,7 +114,8 @@ section {
         visibility: hidden;
     }
 }
-@media only screen and (max-width: 991px){
+
+@media only screen and (max-width: 991px) {
     .speaker_info {
         padding-left: 0px;
         width: 300px;
@@ -141,7 +144,7 @@ section {
 /*---------------------------Event Section-----------------------------*/
 
 .out-box-event-card {
-    background: linear-gradient(90.82deg, #232531 0.55%, rgba(35, 37, 49, 0.9) 99.15%);
+    /* background-color: rgb(34,34,34); */
 }
 
 .card-graphica {
@@ -170,6 +173,10 @@ section {
     border: none;
     background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
     border-radius: 3px;
+}
+
+.now {
+    z-index: 100;
 }
 
 
