@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -22,9 +23,10 @@ body {
 
 section {
     /* max-width: 1400px; */
-    margin: 0 auto;  
+    margin: 0 auto;
 }
-.container{
+
+.container {
     color: white;
 }
 
@@ -39,7 +41,8 @@ section {
     position: relative;
 }
 
-.line_under_heading { /* Use this class for the line under the heading of each section */
+.line_under_heading {
+    /* Use this class for the line under the heading of each section */
     position: relative;
     left: -65px;
     height: 3px;
@@ -56,34 +59,38 @@ section {
 /* --------------------------------------------Universal formatting section ends --------------------------------------*/
 
 /* ------------------------------------------NAVBAR---------------------------------------------------------------- */
-#nav{
+#nav {
     background: #1B1D24;
-    box-shadow: 0px 2px 50px rgba(40, 42, 53, 0.81);    
+    box-shadow: 0px 2px 50px rgba(40, 42, 53, 0.81);
     position: fixed;
     top: 0;
     z-index: 100000000;
 }
+
 /* #nav .container, .navbar{
     padding: 0px, 0px;
 } */
-.navbar{
+.navbar {
     padding: 0px 0px !important;
 }
-.navbar-nav{
+
+.navbar-nav {
     margin-right: 10px;
-    margin-left: auto; 
+    margin-left: auto;
     font-size: 18px !important;
 }
 
-.navbar-brand{
+.navbar-brand {
     position: relative;
 }
-.navbar-brand > img{
+
+.navbar-brand>img {
     position: absolute;
     left: -100px;
     height: 93px;
 }
-.navbar-brand span{
+
+.navbar-brand span {
     font-family: 'Eczar' !important;
     font-style: normal;
     font-weight: 500;
@@ -92,7 +99,8 @@ section {
     color: #DEE0E7;
     padding: 0 0;
 }
-.nav-link{
+
+.nav-link {
     font-weight: 400 !important;
     letter-spacing: 0.02em;
     color: #FFFFFF;
@@ -100,16 +108,19 @@ section {
     line-height: 22px;
     margin: 0px 10px;
 }
-.nav-link-active{
+
+.nav-link-active {
     font-weight: 700 !important;
     color: #FF5733;
 }
-.logoSub{
+
+.logoSub {
     margin-left: 3px;
     font-size: 16px;
     color: var(--primary-blue);
 }
-.navbar-toggler-icon img{
+
+.navbar-toggler-icon img {
     height: 23px;
 }
 
@@ -142,7 +153,7 @@ section {
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
-.home_heading{
+.home_heading {
     font-weight: 700;
     font-size: 96px;
     background: var(--linear_gradient);
@@ -151,7 +162,8 @@ section {
     display: inline-block;
     margin-bottom: 50px;
 }
-.home_heading > span{
+
+.home_heading>span {
     font-family: 'Eczar' !important;
     font-style: normal;
     font-weight: 500;
@@ -161,13 +173,16 @@ section {
     -webkit-background-clip: initial;
     -webkit-text-fill-color: white;
 }
-.home_para{
+
+.home_para {
     margin-top: 30px;
     font-size: 15px;
 }
-.tag{
+
+.tag {
     font-size: 15px;
 }
+
 /* speaker section */
 
 .speaker_cont {
@@ -311,6 +326,7 @@ section {
     /* background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%); */
     filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
     background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
+    overflow: hidden;
 
 }
 
@@ -323,11 +339,9 @@ section {
 }
 
 .now {
-    /* z-index: ; */
-    position: absolute;
-    margin-bottom: 100px;
-
-
+    position: relative;
+    margin-bottom: -50px;
+    margin-right: -50px;
 }
 
 /* .line_under_heading {
