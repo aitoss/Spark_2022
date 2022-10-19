@@ -148,24 +148,47 @@ section {
 }
 
 .card-graphica {
-    background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+    /* background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%); */
+    background: var(--linear_gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     /* text-fill-color: transparent; */
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 32px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
 }
 
 .nov {
-    color: white;
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #F6F6F2;
 }
 
 .inner-content {
-    color: white;
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #D9D9D9;
 }
 
 .main-card {
-    background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
+    /* background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%); */
     filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
+    background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
+
 }
 
 .rulebook,
@@ -173,12 +196,22 @@ section {
     border: none;
     background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
     border-radius: 3px;
+    color: white;
 }
 
 .now {
-    z-index: 100;
+    /* z-index: ; */
+    position: absolute;
+    margin-bottom: 100px;
+
+
 }
 
+/* .line_under_heading {
+    height: 3px;
+    width: 149px;
+    margin-top: 20px;
+    background: var(--linear_gradient); */
 
 
 
@@ -192,3 +225,24 @@ section {
 }
 
 /*--------------------------Mentor Section Ends------------------------*/
+/*footer */
+
+.footer1 ul {
+    color: wheat;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 ul li {
+    padding-left: 50px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+}
