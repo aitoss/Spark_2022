@@ -320,6 +320,7 @@ section {
     line-height: 18px;
     letter-spacing: 0.02em;
     color: #D9D9D9;
+    
 }
 
 .main-card {
@@ -336,8 +337,9 @@ section {
     background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
     border-radius: 3px;
     color: white;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     margin-top: 20px;
+    font-size: 10px;
 }
 
 .now {
@@ -347,6 +349,11 @@ section {
     z-index: -1;
 
 }
+
+/* .now2{
+    margin: 0px;
+    li
+} */
 
 /* .line_under_heading {
     height: 3px;
