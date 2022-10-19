@@ -149,7 +149,7 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .home_heading > span{
     font-family: 'Eczar' !important;
@@ -160,6 +160,9 @@ section {
     color: white !important;
     -webkit-background-clip: initial;
     -webkit-text-fill-color: white;
+}
+.home_para{
+    margin-top: 30px;
 }
 /* speaker section */
 
