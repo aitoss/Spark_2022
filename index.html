@@ -14,21 +14,65 @@
 </head>
 
 <body>
-    <!-- js Links -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 
-    <!-- // enter the code inside a container class inside a section tag -->
-    <section>
-        <div class="container red">Content</div>
+    <!-- navbar -->
+    <section id="nav" class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top" style="z-index: 1000;">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/spark-nav-logo-with-sheild.svg" alt="Logo" class="d-inline-block align-text-top spark-nav-logo">
+                    <span>Spark</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="images/icons/Layer 2.png"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarScroll">        
+                <ul class="navbar-nav navbar-nav-scroll">
+                    <li class="nav-item">
+                    <a class="nav-link nav-link-active" id="s1" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="s2" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="s3" href="#">Speaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="s4" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mentors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="faqs nav-link" href="#">FAQs</a>
+                    </li>        
+                </ul>        
+                </div>        
+                <!-- <form class="form-inline my-2 my-lg-0">
+                <button class="rulebookButton"><a href="https://drive.google.com/file/d/1DgWf-Hv36KOT-A4IZZ-eHritkHG8jX2l/view" style="color: #ffffff; text-decoration:none;">RuleBook<img src="images/icons/Vector.png"></a></button>
+                </form> -->
+            </nav>
+        </div>  
     </section>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section id="home" class="container-fluid pt-4" style="margin-top: 100px;">
+        <div class="container">
+            <div class="heading">
+                <div class="section-name">Speaker</div>
+                <div class="line_under_heading"></div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- speaker section -->
     <section id="speaker" class="section-color container-fluid pt-4">
         <div class="container ">
             <div class="heading">
-                <div class="section-name mx-5">Speaker</div>
+                <div class="section-name">Speaker</div>
                 <div class="line_under_heading"></div>
             </div>
             <div class="row d-flex flex-wrap">
@@ -138,17 +182,7 @@
         </div>
     </section>
     <!-------------------Mentor Section ends---------------------->
-    <!-------------------Footer Section ends---------------------->
-    <div class="footer1">
-        <div class="footer2">
-            <ul class="">
-                <li class="fcontent">COntact Us</li>
-                <li class="fcontent">https://ait.oss.club </li>
-                <li class="fcontent"><img src="images/image 21.png" alt=""></li>
-            </ul>
-        </div>
-    </div>
-    <!-------------------Footer Section ends---------------------->
+
 
 </body>
 
