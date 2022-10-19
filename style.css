@@ -102,8 +102,8 @@ section {
 }
 
 .speaker_info {
-    width: 600px;
-    padding: 50px;
+    width: 400px;
+    padding-left: 50px;
 }
 
 .speaker_social {
@@ -139,13 +139,20 @@ section {
     color: #ffffff;
 }
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1199px) {
     .speaker_info {
-        padding: 0px;
+        padding-left: 50px;
+        width: 300px;
     }
 
     .line_speaker {
         visibility: hidden;
+    }
+}
+@media only screen and (max-width: 991px){
+    .speaker_info {
+        padding-left: 0px;
+        width: 300px;
     }
 }
 
