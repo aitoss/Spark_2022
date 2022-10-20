@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    cursor: context-menu;
 }
 
 @font-face {
@@ -262,6 +263,10 @@ section {
 /* ----------------------------Schedule section END--------------------------- */
 
 /* ----------------------------speaker section--------------------------- */
+.speaker_cont {
+    position: relative;
+}
+
 .speaker_name {
     position: absolute;
     top: 20px;
@@ -339,7 +344,7 @@ section {
 @media only screen and (max-width: 475px) {
     .speaker_name {
         font-size: 25px;
-        left: 20px;
+        left: 250px;
         width: 50px;
     }
 
@@ -367,25 +372,20 @@ section {
     background-color: #21232F;
     width: 360px;
     height: 288px;
+    transition-duration: .7s;
 }
 
-.card-graphica {
-    /* background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%); */
+/* .card-graphica {
     background: var(--linear_gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
-    /* font-family: 'Poppins'; */
     font-style: normal;
     font-weight: 700;
     font-size: 1.25em;
     line-height: 32px;
-    /* identical to box height */
-
     letter-spacing: 0.02em;
-
-}
+} */
 
 .nov {
     /* font-family: 'Poppins'; */
@@ -413,9 +413,14 @@ section {
     background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
     border-radius: 3px;
     color: white;
-    /* margin-right: 10px; */
     margin-top: 40px;
     font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.rulebook:hover,
+.resources:hover {
+    color: white;    
 }
 
 .resources {
@@ -439,172 +444,174 @@ section {
     background-color: red;
     background: #1B1D24;
     backdrop-filter: blur(17px);
+    /* transition: ease-in-out; */
+}
 
 
-    @media only screen and (max-width: 992px) {
-        .line-image {
-            display: none;
-        }
-
-        .main-card {
-            margin: 0 20px;
-        }
-
-        .resources {
-            margin-top: 10px;
-            font-size: 10px;
-            margin-left: 0px;
-        }
-
-
+@media only screen and (max-width: 1200px) {
+    .line-image{
+        display: none;
+    }
+    .main-card{
+        margin: 2rem;
+    }
+    .event-cards{
+        /* display: block !important; */
+        /* flex-direction: column !important; */
+        /* align-items: center !important; */
+        flex-wrap: wrap;
     }
 }
 
 
-    /*---------------------------Event Section Ends-----------------------------*/
-    /*---------------------------Mentor Section-----------------------------*/
 
+/*---------------------------Event Section Ends-----------------------------*/
+/*---------------------------Mentor Section-----------------------------*/
+
+.menti_card {
+    margin: 1rem;
+    background: red;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mentor_pic {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.menti_slip {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+}
+
+.menti_slip img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transition-duration: 5s;
+}
+
+.menti_card:hover .insta_mentor,
+.menti_card:hover .git_mentor {
+    display: block;
+}
+
+.menti_card:hover .mentor_pic {
+    transform: scale(1.1);
+    width: 100%;
+}
+
+.insta_mentor {
+    top: -25px;
+    right: 10px;
+}
+
+.git_mentor {
+    top: -25px;
+    right: 40px;
+}
+
+.menti_field,
+.menti_name {
+    margin: 0 0 0 auto;
+}
+
+.menti_name {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+}
+
+.menti_field {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 992px) {
     .menti_card {
-        margin: 1rem;
-        background: red;
-        width: 200px;
-        height: 200px;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    .mentor_pic {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform .5s ease;
+        margin: 1.7rem;
+        width: 300px;
+        height: 300px;
     }
 
     .menti_slip {
-        padding: 5px 10px;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        position: relative;
-        top: -66px;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+        padding: 8px 20px;
+        top: -80px;
+        height: 60px;
     }
 
     .menti_slip img {
-        display: none;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        transition-duration:  5s;
-    }
-
-    .menti_card:hover .insta_mentor,.menti_card:hover .git_mentor{
-        display: block;
-    }
-    .menti_card:hover .mentor_pic{
-       transform: scale(1.1);
-       width: 100%;
-    }
-
-    .insta_mentor {
-        top: -25px;
-        right: 10px;
+        width: 25px;
+        height: 25px;
     }
 
     .git_mentor {
-        top: -25px;
-        right: 40px;
+        top: -35px;
+        right: 20px;
     }
 
-    .menti_field,
-    .menti_name {
-        margin: 0 0 0 auto;
+    .insta_mentor {
+        top: -35px;
+        right: 55px;
     }
 
     .menti_name {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 22px;
-        letter-spacing: 0.3em;
-
-        color: #FFFFFF;
+        font-size: 16px;
     }
 
     .menti_field {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        letter-spacing: 0.3em;
-
-        color: #FFFFFF;
+        font-size: 13px;
     }
-
-    @media only screen and (min-width: 992px) {
-        .menti_card {
-            margin: 1.7rem;
-            width: 300px;
-            height: 300px;
-        }
-
-        .menti_slip {
-            padding: 8px 20px;
-            top: -80px;
-            height: 60px;
-        }
-
-        .menti_slip img {
-            width: 25px;
-            height: 25px;
-        }
-
-        .git_mentor {
-            top: -35px;
-            right: 20px;
-        }
-
-        .insta_mentor {
-            top: -35px;
-            right: 55px;
-        }
-
-        .menti_name {
-            font-size: 16px;
-        }
-
-        .menti_field {
-            font-size: 13px;
-        }
-    }
+}
 
 
-    /*--------------------------Mentor Section Ends------------------------*/
-    /*footer */
+/*--------------------------Mentor Section Ends------------------------*/
+/*footer */
 
-    .footer1 ul {
-        color: wheat;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
+.footer1 ul {
+    color: wheat;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
-    .footer1 ul li {
-        padding-left: 50px;
-    }
+.footer1 ul li {
+    padding-left: 50px;
+}
 
-    .footer2 {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
+.footer2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
 
-    }
+}
 
     /*--------faqs section-----*/
     .accordion-item {
@@ -635,9 +642,9 @@ section {
         display: inline-block;
     }
 
-    .accordion-link .fa-minus {
-        display: none;
-    }
+.accordion-link .fa-minus {
+    display: none;
+}
 
     .answer {
         box-sizing: border-box;
@@ -682,9 +689,9 @@ section {
         display: none;
     }
 
-    .accordion-item:target .accordion-link .fa-minus {
-        display: block;
-    }
+.accordion-item:target .accordion-link .fa-minus {
+    display: block;
+}
 
     .accordion-link .fa-minus {
         color: var(--linear_gradient);
