@@ -439,7 +439,6 @@ section {
     /* transition: ease-in-out; */
 }
 
-}
 
 @media only screen and (max-width: 1200px) {
     .line-image{
@@ -620,7 +619,7 @@ section {
     top: 4438px; */
 /* align-items: center;
     justify-items: center; */
-}
+
 
 .accordion-item {
     background-color: var(--section_gradient);
