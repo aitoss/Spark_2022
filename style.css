@@ -31,29 +31,44 @@ section {
 }
 
 .heading {
+    margin-top: 1.5rem;
     /* Use this class for the heading of each section */
-    font-weight: 500;
-    font-size: 42px;
+    font-weight: bold;
+    font-size: 2rem;
     background: var(--linear_gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    position: relative;
 }
 
 .line_under_heading {
     /* Use this class for the line under the heading of each section */
     position: relative;
-    left: -65px;
-    height: 3px;
-    width: 149px;
-    margin-top: 20px;
+    left: -30px;
+    height: 2px;
+    width: 100%;
+    margin-top: .7rem;
     background: var(--linear_gradient)
 }
 
-.red {
-    background-color: red;
-}
+
+/* Extra large devices (large laptops and desktops, 1920px and down) */
+@media only screen and (max-width: 1920px) {}
+
+/* Extra large devices (large laptops and desktops, 1400px and down) */
+@media only screen and (max-width: 1400px) {}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Extra small devices (phones, 400 and down) */
+@media only screen and (max-width: 400px) {}
 
 
 /* --------------------------------------------Universal formatting section ends --------------------------------------*/
