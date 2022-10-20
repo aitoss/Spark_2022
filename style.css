@@ -231,13 +231,35 @@ section {
 
 /* ----------------------------Schedule section--------------------------- */
 
-.sch_tabs {
+#schedule .accordion *{
+    border-radius: 0px !important;
+    border: 0px !important;
+    color: white;
+}
+#schedule .accordion, .accordion-item{
+    padding: 0px 0px !important;
+    background-color: transparent !important;
+}
+#schedule .accordion-button{
+    background-color: var(--dark_blue);
+}
+#schedule .accordion-button:not(.collapsed) {
+    background: var(--linear_gradient);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+#schedule .accordion-button::after{
+    display: none !important;
+}
+#schedule .accordion-body{
+    padding: 1rem 0;
+}
+/* .sch_tabs {
     background: var(--dark_blue);
 }
 
 .sch_tabs_active {
     background: var(--linear_gradient);
-}
+} */
 
 .sch_tabs>p:nth-child(1) {
     font-size: 20px;
