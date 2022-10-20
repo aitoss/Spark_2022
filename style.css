@@ -255,6 +255,10 @@ section {
 /* ----------------------------Schedule section END--------------------------- */
 
 /* ----------------------------speaker section--------------------------- */
+.speaker_cont {
+    position: relative;
+}
+
 .speaker_name {
     position: absolute;
     top: 20px;
@@ -332,7 +336,7 @@ section {
 @media only screen and (max-width: 475px) {
     .speaker_name {
         font-size: 25px;
-        left: 20px;
+        left: 250px;
         width: 50px;
     }
 
@@ -432,6 +436,8 @@ section {
     background-color: red;
     background: #1B1D24;
     backdrop-filter: blur(17px);
+    /* transition: ease-in-out; */
+}
 
 }
 
@@ -451,244 +457,248 @@ section {
 }
 
 
-    /*---------------------------Event Section Ends-----------------------------*/
-    /*---------------------------Mentor Section-----------------------------*/
 
+/*---------------------------Event Section Ends-----------------------------*/
+/*---------------------------Mentor Section-----------------------------*/
+
+.menti_card {
+    margin: 1rem;
+    background: red;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mentor_pic {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.menti_slip {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+}
+
+.menti_slip img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transition-duration: 5s;
+}
+
+.menti_card:hover .insta_mentor,
+.menti_card:hover .git_mentor {
+    display: block;
+}
+
+.menti_card:hover .mentor_pic {
+    transform: scale(1.1);
+    width: 100%;
+}
+
+.insta_mentor {
+    top: -25px;
+    right: 10px;
+}
+
+.git_mentor {
+    top: -25px;
+    right: 40px;
+}
+
+.menti_field,
+.menti_name {
+    margin: 0 0 0 auto;
+}
+
+.menti_name {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+}
+
+.menti_field {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 992px) {
     .menti_card {
-        margin: 1rem;
-        background: red;
-        width: 200px;
-        height: 200px;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    .mentor_pic {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform .5s ease;
+        margin: 1.7rem;
+        width: 300px;
+        height: 300px;
     }
 
     .menti_slip {
-        padding: 5px 10px;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        position: relative;
-        top: -66px;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+        padding: 8px 20px;
+        top: -80px;
+        height: 60px;
     }
 
     .menti_slip img {
-        display: none;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        transition-duration:  5s;
-    }
-
-    .menti_card:hover .insta_mentor,.menti_card:hover .git_mentor{
-        display: block;
-    }
-    .menti_card:hover .mentor_pic{
-       transform: scale(1.1);
-       width: 100%;
-    }
-
-    .insta_mentor {
-        top: -25px;
-        right: 10px;
+        width: 25px;
+        height: 25px;
     }
 
     .git_mentor {
-        top: -25px;
-        right: 40px;
+        top: -35px;
+        right: 20px;
     }
 
-    .menti_field,
-    .menti_name {
-        margin: 0 0 0 auto;
+    .insta_mentor {
+        top: -35px;
+        right: 55px;
     }
 
     .menti_name {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 22px;
-        letter-spacing: 0.3em;
-
-        color: #FFFFFF;
+        font-size: 16px;
     }
 
     .menti_field {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        letter-spacing: 0.3em;
-
-        color: #FFFFFF;
+        font-size: 13px;
     }
-
-    @media only screen and (min-width: 992px) {
-        .menti_card {
-            margin: 1.7rem;
-            width: 300px;
-            height: 300px;
-        }
-
-        .menti_slip {
-            padding: 8px 20px;
-            top: -80px;
-            height: 60px;
-        }
-
-        .menti_slip img {
-            width: 25px;
-            height: 25px;
-        }
-
-        .git_mentor {
-            top: -35px;
-            right: 20px;
-        }
-
-        .insta_mentor {
-            top: -35px;
-            right: 55px;
-        }
-
-        .menti_name {
-            font-size: 16px;
-        }
-
-        .menti_field {
-            font-size: 13px;
-        }
-    }
+}
 
 
-    /*--------------------------Mentor Section Ends------------------------*/
-    /*footer */
+/*--------------------------Mentor Section Ends------------------------*/
+/*footer */
 
-    .footer1 ul {
-        color: wheat;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
+.footer1 ul {
+    color: wheat;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
-    .footer1 ul li {
-        padding-left: 50px;
-    }
+.footer1 ul li {
+    padding-left: 50px;
+}
 
-    .footer2 {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
+.footer2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
 
-    }
+}
 
-    /*--------faqs section-----*/
-    .faqs {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+/*--------faqs section-----*/
+.faqs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    /* .container1 {
+/* .container1 {
         /* width: 720px;
     height: 730px; */
-        /* left: -9px;
+/* left: -9px;
     top: 4438px; */
-        /* align-items: center;
+/* align-items: center;
     justify-items: center; */
-    }
+}
 
-    .accordion-item {
-        background-color: var(--section_gradient);
-        border-radius: 2rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
-    }
+.accordion-item {
+    background-color: var(--section_gradient);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+}
 
-    .accordion-link {
-        font-size: 1.6rem;
-        color: rgb(60, 139, 86);
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        padding: 1rem 0;
-        transition-property: 0;
-    }
+.accordion-link {
+    font-size: 1.6rem;
+    color: rgb(60, 139, 86);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem 0;
+    transition-property: 0;
+}
 
-    .accordion-link i {
-        color: #e7d5ff;
-        padding: 0.5rem;
-    }
+.accordion-link i {
+    color: #e7d5ff;
+    padding: 0.5rem;
+}
 
-    .accordion-link .fa-minus {
-        display: none;
-    }
+.accordion-link .fa-minus {
+    display: none;
+}
 
-    .answer {
-        max-height: 0;
-        overflow: hidden;
-        position: relative;
-        background-color: #4C4F54;
-        transition: max-heigth 650ms;
-        margin-left: 4rem;
-    }
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #4C4F54;
+    transition: max-heigth 650ms;
+    margin-left: 4rem;
+}
 
-    .answer::before {
-        content: "";
-        position: absolute;
-        width: .6rem;
-        height: 80%;
-        background: var(--linear_gradient);
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        margin-left: 3rem;
-    }
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 80%;
+    background: var(--linear_gradient);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 3rem;
+}
 
-    .answer p {
-        font-size: 1.4rem;
-        color: rgba(255, 255, 255, .6);
-        padding-left: 5rem;
+.answer p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, .6);
+    padding-left: 5rem;
 
-    }
+}
 
-    .accordion-item:target .answer {
-        max-height: 20rem;
-    }
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
 
-    .accordion-item:target .accordion-link .fa-plus {
-        display: none;
-    }
+.accordion-item:target .accordion-link .fa-plus {
+    display: none;
+}
 
-    .accordion-item:target .accordion-link .fa-minus {
-        display: block;
-    }
+.accordion-item:target .accordion-link .fa-minus {
+    display: block;
+}
 
-    .accordion-link .fa-minus {
-        color: var(--linear_gradient);
-    }
+.accordion-link .fa-minus {
+    color: var(--linear_gradient);
+}
 
-    .accordion-item .accordion-link .fa-plus {
-        background: var(--linear_gradient);
-    }
+.accordion-item .accordion-link .fa-plus {
+    background: var(--linear_gradient);
+}
 
-    .accordion-item .accordion-link .fa-minus {
-        background: var(--linear_gradient);
-    }
+.accordion-item .accordion-link .fa-minus {
+    background: var(--linear_gradient);
+}
