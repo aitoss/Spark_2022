@@ -155,7 +155,7 @@ section {
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
 #home{
     margin-top: 160px;
-    height: calc(100vh - 160px);
+    min-height: calc(100vh - 160px);
 }
 .home_heading{
     font-weight: 500;
