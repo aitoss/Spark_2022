@@ -505,6 +505,37 @@ section {
 
     color: #FFFFFF;
 }
+@media only screen and (min-width: 992px) {
+    .menti_card {
+        margin: 1.7rem;
+        width: 300px;
+        height: 300px;
+    }
+    .menti_slip{
+        padding: 8px 20px;
+        top: -80px;
+        height: 60px;
+    }
+    .menti_slip img{
+        width: 25px;
+        height: 25px;
+    }
+    .git_mentor{
+        top: -35px;
+        right: 20px;
+    }
+    .insta_mentor{
+        top: -35px;
+        right: 55px;
+    }
+    .menti_name{
+        font-size: 16px;
+    }
+    .menti_field{
+        font-size: 13px;
+    }
+}
+
 
 /*--------------------------Mentor Section Ends------------------------*/
 /*footer */
