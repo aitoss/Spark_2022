@@ -349,6 +349,11 @@ section {
 
 /*---------------------------Event Section-----------------------------*/
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 .main-card {
     background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
     filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
@@ -425,10 +430,31 @@ section {
     height: 288px;
 }
 
+<<<<<<< Updated upstream
 .main-card:hover {
     background-color: red;
     background: #1B1D24;
     backdrop-filter: blur(17px);
+=======
+
+
+@media only screen and (max-width: 992px) {
+    .line-image {
+        display: none;
+    }
+
+    .main-card {
+        margin: 0 20px;
+    }
+
+    .resources {
+        margin-top: 10px;
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+
+>>>>>>> Stashed changes
 }
 
 
