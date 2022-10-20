@@ -14,6 +14,7 @@
 :root {
     --linear_gradient: linear-gradient(to right, #C70039 0%, #FF5733 100%);
     --section_gradient: linear-gradient(90.82deg, #232531 0.55%, #22242F 99.15%, #22242F 99.15%);
+    --dark_blue: #1B1D24;
 }
 
 /* --------------------------- Some universal classes including various container structures and heading formating ----------------------------*/
@@ -78,7 +79,7 @@ section {
 
 /* ------------------------------------------NAVBAR---------------------------------------------------------------- */
 #nav {
-    background: #1B1D24;
+    background: var(--dark_blue);
     box-shadow: 0px 2px 50px rgba(40, 42, 53, 0.81);
     position: fixed;
     top: 0;
@@ -211,14 +212,37 @@ section {
 #home img{
     margin-left: 64px;
 }
+/* ----------------------------hero section END--------------------------- */
 
+/* ----------------------------Schedule section--------------------------- */
+
+.sch_tabs{
+    background: var(--dark_blue);
+}
+.sch_tabs_active{
+    background: var(--linear_gradient);
+}
+.sch_tabs>p:nth-child(1){
+    font-size: 20px;
+}
+.sch_tabs>p:nth-child(2){
+    font-size: 14px;
+}
+
+.sch_item{
+    background: var(--dark_blue);
+}
+.sch_item_content>p:nth-child(odd){
+    font-size: 14px;
+    font-weight: 300;
+}
+.sch_item_content>p:nth-child(even){
+    font-size: 22px;
+    font-weight: 600;
+}
+/* ----------------------------Schedule section END--------------------------- */
 
 /* ----------------------------speaker section--------------------------- */
-
-/* .speaker_cont {
-    position: relative;
-} */
-
 .speaker_name {
     position: absolute;
     top: 20px;
@@ -496,6 +520,8 @@ section {
         height: 730px;
         left: -9px;
         top: 4438px;
+        align-items: center;
+        justify-items: center;
 }
 .accordion-item{
     background-color:var(--section_gradient);
@@ -508,7 +534,6 @@ section {
     font-size: 1.6rem;
     color:rgb(60, 139, 86);
     text-decoration: none;
-    background-color: #283042; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -523,22 +548,36 @@ section {
     display: none;
 }
 .answer{
-    /* max-height: 0;
-    overflow: hidden; */
+    max-height: 0;
+    overflow: hidden;
     position: relative;
     background-color:#4C4F54;
+    transition: max-heigth 650ms;
+    margin-left: 4rem;
 }
 .answer::before{
     content: "";
     position: absolute;
     width: .6rem;
-    height: 90%;
-    background-color:red;
+    height: 80%;
+    background:var(--linear_gradient);
     top: 50%;
     left: 0;
     transform:translateY(-50%) ;
+    margin-left:3rem;
 }
 .answer p{
     font-size:1.4rem;
     color: rgba(255,255,255,.6);
+    padding-left:5rem;
+
 } 
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+.accordion-item:target .accordion-link .fa-plus{
+    display: none;
+}
+.accordion-item:target .accordion-link .fa-minus {
+    display: block;
+}
