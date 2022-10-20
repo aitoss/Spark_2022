@@ -528,7 +528,6 @@ section {
     align-content: center;
 
 }
-
 /*--------faqs section-----*/
 .faqs {
     display: flex;
@@ -562,6 +561,7 @@ section {
     align-items: center;
     justify-content: start;
     padding: 1rem 0;
+    transition-property: 0;
 }
 
 .accordion-link i {
@@ -611,4 +611,13 @@ section {
 
 .accordion-item:target .accordion-link .fa-minus {
     display: block;
+}
+.accordion-link .fa-minus{
+    color:var(--linear_gradient);
+}
+.accordion-item .accordion-link .fa-plus{
+    background: var(--linear_gradient);
+}
+.accordion-item .accordion-link .fa-minus{
+    background: var(--linear_gradient);
 }
