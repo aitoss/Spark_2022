@@ -14,6 +14,7 @@
 :root {
     --linear_gradient: linear-gradient(to right, #C70039 0%, #FF5733 100%);
     --section_gradient: linear-gradient(90.82deg, #232531 0.55%, #22242F 99.15%, #22242F 99.15%);
+    --dark_blue: #1B1D24;
 }
 
 /* --------------------------- Some universal classes including various container structures and heading formating ----------------------------*/
@@ -28,6 +29,10 @@ section {
 
 .container {
     color: white;
+}
+
+.col-5 {
+    background: red;
 }
 
 .heading {
@@ -75,7 +80,7 @@ section {
 
 /* ------------------------------------------NAVBAR---------------------------------------------------------------- */
 #nav {
-    background: #1B1D24;
+    background: var(--dark_blue);
     box-shadow: 0px 2px 50px rgba(40, 42, 53, 0.81);
     position: fixed;
     top: 0;
@@ -168,11 +173,12 @@ section {
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
-#home{
+#home {
     margin-top: 160px;
     min-height: calc(100vh - 160px);
 }
-.home_heading{
+
+.home_heading {
     font-weight: 500;
     font-size: 96px;
     background: var(--linear_gradient);
@@ -201,21 +207,53 @@ section {
     letter-spacing: 0.05em;
     font-weight: lighter;
 }
-.tag{
+
+.tag {
     font-size: 28px;
     font-weight: 400;
 }
-#home img{
+
+#home img {
     margin-left: 64px;
 }
 
+/* ----------------------------hero section END--------------------------- */
+
+/* ----------------------------Schedule section--------------------------- */
+
+.sch_tabs {
+    background: var(--dark_blue);
+}
+
+.sch_tabs_active {
+    background: var(--linear_gradient);
+}
+
+.sch_tabs>p:nth-child(1) {
+    font-size: 20px;
+}
+
+.sch_tabs>p:nth-child(2) {
+    font-size: 14px;
+}
+
+.sch_item {
+    background: var(--dark_blue);
+}
+
+.sch_item_content>p:nth-child(odd) {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sch_item_content>p:nth-child(even) {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ----------------------------Schedule section END--------------------------- */
 
 /* ----------------------------speaker section--------------------------- */
-
-/* .speaker_cont {
-    position: relative;
-} */
-
 .speaker_name {
     position: absolute;
     top: 20px;
@@ -283,7 +321,8 @@ section {
     }
 
 }
-@media only screen and (max-width: 767px){
+
+@media only screen and (max-width: 767px) {
     .line_speaker {
         visibility: hidden;
     }
@@ -309,6 +348,16 @@ section {
 
 
 /*---------------------------Event Section-----------------------------*/
+
+.main-card {
+    background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
+    filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
+    overflow: hidden;
+    padding: 30px;
+    background-color: #21232F;
+    width: 360px;
+    height: 288px;
+}
 
 .card-graphica {
     /* background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%); */
@@ -341,19 +390,11 @@ section {
     /* font-family: 'Poppins'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.02em;
     color: #D9D9D9;
 
-}
-
-.main-card {
-    background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
-    filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
-    overflow: hidden;
-    padding: 30px;
-    background-color: #21232F;
 }
 
 .rulebook,
@@ -363,45 +404,106 @@ section {
     border-radius: 3px;
     color: white;
     /* margin-right: 10px; */
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 10px;
 }
-.resources{
-    margin-left: 5px;
+
+.resources {
+    margin-left: 20px;
 }
 
 .now {
     position: absolute;
-    bottom: -25%;
-    right: -25%;
+    bottom: -18%;
+    right: -18%;
     z-index: -1;
 
 }
 
-.line-image{
-    height: 237px;
+.line-image {
+    margin: 0 50px;
+    height: 288px;
 }
 
-/* .now2{
-    margin: 0px;
-    li
-} */
-
-/* .line_under_heading {
-    height: 3px;
-    width: 149px;
-    margin-top: 20px;
-    background: var(--linear_gradient); */
+.main-card:hover {
+    background-color: red;
+    background: #1B1D24;
+    backdrop-filter: blur(17px);
+}
 
 
 
 /*---------------------------Event Section Ends-----------------------------*/
 /*---------------------------Mentor Section-----------------------------*/
-.mcard {
+
+.menti_card {
+    margin: 1rem;
+    background: red;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+}
+
+.mentor_pic {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menti_slip {
+    padding: 5px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    position: relative;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+}
+
+.menti_slip img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.insta_mentor {
+    top: -25px;
+    right: 10px;
+}
+
+.git_mentor {
+    top: -25px;
+    right: 40px;
+}
+
+.menti_field,
+.menti_name {
+    margin: 0 0 0 auto;
+}
+
+.menti_name {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+}
+
+.menti_field {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
 }
 
 /*--------------------------Mentor Section Ends------------------------*/
@@ -426,6 +528,7 @@ section {
     align-content: center;
 
 }
+<<<<<<< HEAD
 /*--------faqs section---------------------------------------------------*/
 html {
 
@@ -448,64 +551,99 @@ html {
 }
 .accordion{
     display: inline;
+=======
+
+/*--------faqs section-----*/
+.faqs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.accordion-item{
-    background-color:var(--section_gradient);
+
+.container1 {
+    width: 720px;
+    height: 730px;
+    left: -9px;
+    top: 4438px;
+    align-items: center;
+    justify-items: center;
+>>>>>>> df02a9faa51d68cc77af6d739982b3105132f910
+}
+
+.accordion-item {
+    background-color: var(--section_gradient);
     border-radius: 2rem;
     margin-bottom: 1rem;
     padding: 1rem;
+<<<<<<< HEAD
     box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
     max-width: 720px;
+=======
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+>>>>>>> df02a9faa51d68cc77af6d739982b3105132f910
 }
-.accordion-link{
+
+.accordion-link {
     font-size: 1.6rem;
+<<<<<<< HEAD
     color: white;
+=======
+    color: rgb(60, 139, 86);
+>>>>>>> df02a9faa51d68cc77af6d739982b3105132f910
     text-decoration: none;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:start;
+    justify-content: start;
     padding: 1rem 0;
     transition-property: 0;
 }
-.accordion-link i{
+
+.accordion-link i {
     color: #e7d5ff;
     padding: 0.5rem;
 }
-.accordion-link .fa-minus{
+
+.accordion-link .fa-minus {
     display: none;
 }
-.answer{
+
+.answer {
     max-height: 0;
     overflow: hidden;
     position: relative;
-    background-color:#4C4F54;
+    background-color: #4C4F54;
     transition: max-heigth 650ms;
     margin-left: 4rem;
 }
-.answer::before{
+
+.answer::before {
     content: "";
     position: absolute;
     width: .6rem;
     height: 80%;
-    background:var(--linear_gradient);
+    background: var(--linear_gradient);
     top: 50%;
     left: 0;
-    transform:translateY(-50%) ;
-    margin-left:3rem;
+    transform: translateY(-50%);
+    margin-left: 3rem;
 }
-.answer p{
-    font-size:1.4rem;
-    color: rgba(255,255,255,.6);
-    padding-left:5rem;
 
-} 
-.accordion-item:target .answer{
+.answer p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, .6);
+    padding-left: 5rem;
+
+}
+
+.accordion-item:target .answer {
     max-height: 20rem;
 }
-.accordion-item:target .accordion-link .fa-plus{
+
+.accordion-item:target .accordion-link .fa-plus {
     display: none;
 }
+
 .accordion-item:target .accordion-link .fa-minus {
     display: block;
 }
