@@ -29,6 +29,9 @@ section {
 .container {
     color: white;
 }
+.col-5{
+    background: red;
+}
 
 .heading {
     margin-top: 1.5rem;
@@ -397,11 +400,66 @@ section {
 
 /*---------------------------Event Section Ends-----------------------------*/
 /*---------------------------Mentor Section-----------------------------*/
-.mcard {
+
+.menti_card {
+    margin: 1rem;
+    background: red;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+}
+.mentor_pic{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menti_slip{
+    padding: 5px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    float: left;
+    position: relative;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+}
+.menti_slip img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.insta_mentor{
+    top: -25px;
+    right: 10px;
+}
+.git_mentor{
+    top: -25px;
+    right: 40px;
+}
+.menti_field,.menti_name{
+    margin:0 0 0 auto;
+}
+.menti_name{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
+}
+.menti_field{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+
+    color: #FFFFFF;
 }
 
 /*--------------------------Mentor Section Ends------------------------*/
