@@ -22,6 +22,8 @@
 /* --------------------------- Some universal classes including various container structures and heading formating ----------------------------*/
 body {
     background: var(--section_gradient);
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -849,6 +851,9 @@ section {
     color: var(--linear_gradient);
 }
 
+.answer{
+    margin-bottom: 30px;
+}
 /* 
     .accordion-item .accordion-link .fa-plus {
         background: var(--linear_gradient);
@@ -929,6 +934,12 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .footer_logo{
+        height: 100%;
     }
 }
 .contact_footer{
