@@ -140,10 +140,10 @@ section {
     margin: 0px 10px;
 }
 
-.nav-link-active {
+/* .nav-link-active {
     font-weight: 600 !important;
-    color: #FF5733;
-}
+    color: #FF5733 !important;
+} */
 
 .logoSub {
     margin-left: 3px;
@@ -153,6 +153,11 @@ section {
 
 .navbar-toggler-icon img {
     height: 23px;
+}
+
+.active{
+    font-weight: 700px;
+    color: var(--primary-blue);
 }
 
 /* .rulebookButton{
