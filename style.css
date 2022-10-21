@@ -24,14 +24,15 @@ body {
     background: var(--section_gradient);
 }
 
-a{
-   text-decoration: none; 
+a {
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: white;
 }
+
 section {
     /* max-width: 1400px; */
     margin: 0 auto;
@@ -140,7 +141,7 @@ section {
 }
 
 .nav-link-active {
-    font-weight:600 !important;
+    font-weight: 600 !important;
     color: #FF5733;
 }
 
@@ -190,7 +191,7 @@ section {
 
 .home_heading {
     font-weight: 500;
-    font-size: clamp(1.5rem, 6.9vw , 6rem);
+    font-size: clamp(1.5rem, 6.9vw, 6rem);
     background: var(--linear_gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -214,7 +215,8 @@ section {
     letter-spacing: 0.05em;
     font-weight: lighter;
 }
-.home_para_2{
+
+.home_para_2 {
     display: none;
 }
 
@@ -228,13 +230,17 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
-    .tag, .home_para{
+
+    .tag,
+    .home_para {
         display: none;
     }
-    .home_para_2{
+
+    .home_para_2 {
         display: block;
     }
-    .hero-spark-logo{
+
+    .hero-spark-logo {
         margin: 1rem auto;
     }
 }
@@ -243,28 +249,35 @@ section {
 
 /* ----------------------------Schedule section--------------------------- */
 
-#schedule .accordion *{
+#schedule .accordion * {
     border-radius: 0px !important;
     border: 0px !important;
     color: white;
 }
-#schedule .accordion, .accordion-item{
+
+#schedule .accordion,
+.accordion-item {
     padding: 0px 0px !important;
     background-color: transparent !important;
 }
-#schedule .accordion-button{
+
+#schedule .accordion-button {
     background-color: var(--dark_blue);
 }
+
 #schedule .accordion-button:not(.collapsed) {
     background: var(--linear_gradient);
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
-#schedule .accordion-button::after{
+
+#schedule .accordion-button::after {
     display: none !important;
 }
-#schedule .accordion-body{
+
+#schedule .accordion-body {
     padding: 1rem 0;
 }
+
 /* .sch_tabs {
     background: var(--dark_blue);
 }
@@ -331,7 +344,8 @@ section {
     height: 450px;
     background: var(--linear_gradient);
 }
-.line_speaker{
+
+.line_speaker {
     display: flex;
 }
 
@@ -378,6 +392,7 @@ section {
     .line_speaker {
         display: none !important;
     }
+
     .speaker_info {
         width: auto;
     }
@@ -397,7 +412,8 @@ section {
         position: static;
         margin-top: 1rem;
     }
-    .speaker_post{
+
+    .speaker_post {
         width: auto;
         font-size: 1.25rem;
     }
@@ -461,20 +477,26 @@ section {
 .resources {
     border: none;
     background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
-    border-radius: 3px;
-    color: white !important;
-    margin-top: 40px;
+    
+    border-radius: 1px;
+    color: white;
+    /* margin-top: 40px; */
     font-size: 10px;
     letter-spacing: 1px;
+    border-width: none;
+    --bs-btn-border-width: none;
+}
+.btn{
+    --bs-btn-border-width: none;
 }
 
 .rulebook:hover,
 .resources:hover {
-    color: white !important;    
+    color: white;
 }
 
 .resources {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .now {
@@ -494,18 +516,21 @@ section {
     /* background-color: red; */
     background: #1B1D24;
     backdrop-filter: blur(17px);
+    transition: 0.7s;
     /* transition: ease-in-out; */
 }
 
 
 @media only screen and (max-width: 1200px) {
-    .line-image{
+    .line-image {
         display: none;
     }
-    .main-card{
+
+    .main-card {
         margin: 2rem;
     }
-    .event-cards{
+
+    .event-cards {
         /* display: block !important; */
         /* flex-direction: column !important; */
         /* align-items: center !important; */
@@ -642,7 +667,9 @@ section {
 }
 
 @media only screen and (max-width: 576px) {
-    .insta_mentor, .git_mentor{
+
+    .insta_mentor,
+    .git_mentor {
         display: block !important;
     }
 }
@@ -738,7 +765,7 @@ section {
     max-height: 20rem;
 }
 
-#faq .accordion-item:target{
+#faq .accordion-item:target {
     border-color: #FF5733;
     padding-bottom: 1rem;
 }
@@ -754,6 +781,7 @@ section {
 #faq .accordion-link .fa-minus {
     color: var(--linear_gradient);
 }
+
 /* 
     .accordion-item .accordion-link .fa-plus {
         background: var(--linear_gradient);
@@ -763,12 +791,13 @@ section {
         background: var(--linear_gradient);
     } */
 @media only screen and (max-width: 992px) {
-    .faq *{
+    .faq * {
         font-size: 1rem;
     }
 }
+
 @media only screen and (max-width: 576px) {
-    #faq .answer{
+    #faq .answer {
         margin-left: 0px;
     }
 }
