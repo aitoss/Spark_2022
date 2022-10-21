@@ -367,10 +367,15 @@ section {
 .accordion-header{
     height: 100%;
 }
+
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
     .sch_tabs_bar{
         flex-direction: column;
+    }
+    .sch_item{
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 }
 
