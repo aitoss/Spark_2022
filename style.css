@@ -119,8 +119,8 @@ section {
 
 .navbar-brand>img {
     position: absolute;
-    left: -100px;
     height: 93px;
+    left: -30px;
 }
 
 .navbar-brand span {
@@ -131,6 +131,7 @@ section {
     line-height: 66px;
     color: #DEE0E7;
     padding: 0 0;
+    margin-left: 46px;
 }
 
 .nav-link {
@@ -162,6 +163,14 @@ section {
     color: var(--primary-blue);
 }
 
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    border: none;
+    box-shadow: none;
+}
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
@@ -515,13 +524,13 @@ section {
 
 .main-card {
     background: linear-gradient(120.72deg, #1B1D24 1.62%, rgba(67, 71, 84, 0) 62.87%, rgba(27, 29, 36, 0) 70.33%);
-    filter: drop-shadow(0px 1px 34px rgba(205, 9, 56, 0.15));
+    filter: drop-shadow(0px 1px 15px rgba(205, 9, 56, 0.15));
     overflow: hidden;
     padding: 30px;
     background-color: #21232F;
     width: 360px;
     height: 288px;
-    transition-duration: .7s;
+    transition: 0.7s ease-in-out;
 }
 
 /* .card-graphica {
@@ -600,7 +609,7 @@ section {
 .main-card:hover {
     /* background-color: red; */
     background: #1B1D24;
-    backdrop-filter: blur(17px);
+    backdrop-filter: blur(10px);
     transition: 0.7s;
     /* transition: ease-in-out; */
 }
@@ -641,20 +650,21 @@ section {
     padding: 0;
     overflow: hidden;
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 .dark-overlay{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
     top: 0%;
+    transition: 0.3s ease-in-out;
 }
 .mentor_pic {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform .5s ease;
     margin: auto auto;
     filter: grayscale(0%);
 }
@@ -674,20 +684,19 @@ section {
 }
 
 .menti_slip img {
-    display: none;
+    opacity: 0;
     width: 20px;
     height: 20px;
     position: absolute;
-    transition-duration: 5s;
+    transition: 0.3s ease-in-out;
 }
 .menti_box .col-md-4{
     display: flex;
     justify-content: center;
 }
 
-.menti_card:hover .insta_mentor,
-.menti_card:hover .git_mentor {
-    display: block;
+.menti_card:hover .menti_slip img {
+    opacity: 1;
 }
 
 /* .menti_card:hover .mentor_pic {
@@ -696,16 +705,16 @@ section {
     filter: grayscale(100%);
 } */
 
-.menti_card:hover .dark-overlay {
-    visibility: visible;
+.dark-overlay:hover {
+    opacity: 0.8;
 }
 .insta_mentor {
-    top: -25px;
+    top: 0px;
     right: 10px;
 }
 
 .git_mentor {
-    top: -25px;
+    top: px;
     right: 40px;
 }
 
@@ -822,7 +831,7 @@ section {
     overflow: hidden;
     position: relative;
     background-color: #4C4F54;
-    transition: max-heigth 650ms;
+    transition: 650ms;
     margin-left: 4rem;
 }
 
