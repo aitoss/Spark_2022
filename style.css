@@ -491,7 +491,7 @@ section {
 }
 
 .main-card:hover {
-    background-color: red;
+    /* background-color: red; */
     background: #1B1D24;
     backdrop-filter: blur(17px);
     /* transition: ease-in-out; */
