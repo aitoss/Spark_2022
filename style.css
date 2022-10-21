@@ -645,8 +645,16 @@ section {
     height: 200px;
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
-
+.dark-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    top: 0%;
+}
 .mentor_pic {
     height: 100%;
     width: 100%;
@@ -667,6 +675,7 @@ section {
     width: 100%;
     height: 50px;
     background: linear-gradient(89.73deg, #C70039 0.13%, #FF5733 99.69%);
+    color: white !important;
 }
 
 .menti_slip img {
@@ -686,12 +695,15 @@ section {
     display: block;
 }
 
-.menti_card:hover .mentor_pic {
+/* .menti_card:hover .mentor_pic {
     transform: scale(1.1);
     width: 100%;
     filter: grayscale(100%);
-}
+} */
 
+.menti_card:hover .dark-overlay {
+    visibility: visible;
+}
 .insta_mentor {
     top: -25px;
     right: 10px;
