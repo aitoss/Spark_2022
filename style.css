@@ -693,7 +693,7 @@ section {
     right: 40px;
 }
 
-.menti_field,
+
 .menti_name {
     margin: 0 0 0 auto;
 }
@@ -709,7 +709,7 @@ section {
     color: #FFFFFF;
 }
 
-.menti_field {
+/* .menti_field {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
@@ -717,7 +717,7 @@ section {
     letter-spacing: 0.3em;
 
     color: #FFFFFF;
-}
+} */
 
 @media only screen and (min-width: 992px) {
     .menti_card {
