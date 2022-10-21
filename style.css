@@ -184,13 +184,13 @@ section {
 
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
 #home {
-    margin-top: 160px;
+    margin-top: 100px;
     min-height: calc(100vh - 160px);
 }
 
 .home_heading {
     font-weight: 500;
-    font-size: 96px;
+    font-size: clamp(1.5rem, 6.9vw , 6rem);
     background: var(--linear_gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -200,9 +200,6 @@ section {
 
 .home_heading>span {
     font-family: 'Eczar' !important;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 96px;
     line-height: 66px;
     color: white !important;
     -webkit-background-clip: initial;
@@ -212,10 +209,13 @@ section {
 .home_para {
     margin-top: 30px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     letter-spacing: 0.05em;
     font-weight: lighter;
+}
+.home_para_2{
+    display: none;
 }
 
 .tag {
@@ -223,8 +223,20 @@ section {
     font-weight: 400;
 }
 
-#home img {
+.hero-spark-logo {
     margin-left: 64px;
+}
+
+@media only screen and (max-width: 767px) {
+    .tag, .home_para{
+        display: none;
+    }
+    .home_para_2{
+        display: block;
+    }
+    .hero-spark-logo{
+        margin: 1rem auto;
+    }
 }
 
 /* ----------------------------hero section END--------------------------- */
@@ -301,7 +313,7 @@ section {
 
 .img_speaker {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
 }
 
@@ -315,20 +327,24 @@ section {
 }
 
 .line {
-    width: 350px;
-    height: 3px;
+    width: 3px;
+    height: 450px;
     background: var(--linear_gradient);
 }
-
-.line_spe {
-    rotate: 270deg;
-    height: auto;
+.line_speaker{
+    display: flex;
 }
+
+/* .line_content {
+    rotate: 270deg;
+} */
 
 .line_content {
     font-weight: 200;
     font-size: 16px;
     color: #ffffff;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
 
 .speaker_post {
@@ -360,7 +376,10 @@ section {
 
 @media only screen and (max-width: 767px) {
     .line_speaker {
-        visibility: hidden;
+        display: none !important;
+    }
+    .speaker_info {
+        width: auto;
     }
 }
 
@@ -369,10 +388,6 @@ section {
         font-size: 25px;
         left: 250px;
         width: 50px;
-    }
-
-    .line_speaker {
-        visibility: hidden;
     }
 }
 
