@@ -140,10 +140,10 @@ section {
     margin: 0px 10px;
 }
 
-.nav-link-active {
+/* .nav-link-active {
     font-weight: 600 !important;
-    color: #FF5733;
-}
+    color: #FF5733 !important;
+} */
 
 .logoSub {
     margin-left: 3px;
@@ -155,31 +155,10 @@ section {
     height: 23px;
 }
 
-/* .rulebookButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-
-    width: 140px;
-    height: 36px;
-
-    background: var(--primary-blue);
-    border-radius: 20px;
-    font-weight: 100;
-    border: none;
+.active{
+    font-weight: 700px;
+    color: var(--primary-blue);
 }
-.rulebookButton:hover{
-    background: #0F1F3D;
-}
-.navbar-toggler-icon{
-    display :contents;
-}
-.rulebookButton img{
-    height: 20px;
-} */
 
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
@@ -371,6 +350,10 @@ section {
 .speaker_content {
     font-size: 16px;
     color: #ffffff;
+}
+.s_icon:hover{
+    transition: 1s;
+    transform: scale(1.2);
 }
 
 @media only screen and (max-width: 1199px) {
@@ -565,7 +548,7 @@ section {
     object-fit: cover;
     transition: transform .5s ease;
     margin: auto auto;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 .menti_slip {
@@ -597,7 +580,7 @@ section {
 .menti_card:hover .mentor_pic {
     transform: scale(1.1);
     width: 100%;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 .insta_mentor {
