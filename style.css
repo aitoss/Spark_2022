@@ -618,7 +618,12 @@ section {
     margin-top: 30px !important;
 } */
 
-
+/* Extra small devices (phones, 400 and down) */
+@media only screen and (max-width: 400px) {
+    .main-card{
+        height: 300px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .line-image {
@@ -836,6 +841,7 @@ section {
 }
 
 #faq .answer::before {
+    margin-bottom: 0 !important;
     content: "";
     position: absolute;
     width: 2px;
@@ -846,6 +852,7 @@ section {
     transform: translateY(-50%);
     margin-left: 3rem;
 }
+
 
 #faq .answer p {
     font-size: 1rem;
@@ -876,9 +883,7 @@ section {
     color: var(--linear_gradient);
 }
 
-.answer{
-    margin-bottom: 30px;
-}
+
 /* 
     .accordion-item .accordion-link .fa-plus {
         background: var(--linear_gradient);
