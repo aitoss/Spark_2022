@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    cursor: context-menu;
+    /* cursor: context-menu; */
     color: white;
 }
 
@@ -634,7 +634,7 @@ section {
 /*---------------------------Mentor Section-----------------------------*/
 
 .menti_card {
-    margin: 1rem auto;
+    margin: 1rem 1rem;
     background: red;
     width: 200px;
     height: 200px;
@@ -680,6 +680,10 @@ section {
     position: absolute;
     transition-duration: 5s;
 }
+.menti_box .col-md-4{
+    display: flex;
+    justify-content: center;
+}
 
 .menti_card:hover .insta_mentor,
 .menti_card:hover .git_mentor {
@@ -705,7 +709,7 @@ section {
     right: 40px;
 }
 
-.menti_field,
+
 .menti_name {
     margin: 0 0 0 auto;
 }
@@ -721,7 +725,7 @@ section {
     color: #FFFFFF;
 }
 
-.menti_field {
+/* .menti_field {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
@@ -729,7 +733,7 @@ section {
     letter-spacing: 0.3em;
 
     color: #FFFFFF;
-}
+} */
 
 @media only screen and (min-width: 992px) {
     .menti_card {
