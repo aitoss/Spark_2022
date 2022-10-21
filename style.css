@@ -385,9 +385,21 @@ section {
 
 @media only screen and (max-width: 475px) {
     .speaker_name {
-        font-size: 25px;
+        font-size: 1.5rem;
         left: 250px;
         width: 50px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .speaker_name {
+        width: auto;
+        position: static;
+        margin-top: 1rem;
+    }
+    .speaker_post{
+        width: auto;
+        font-size: 1.25rem;
     }
 }
 
@@ -521,6 +533,7 @@ section {
     object-fit: cover;
     transition: transform .5s ease;
     margin: auto auto;
+    filter: grayscale(100%);
 }
 
 .menti_slip {
@@ -552,6 +565,7 @@ section {
 .menti_card:hover .mentor_pic {
     transform: scale(1.1);
     width: 100%;
+    filter: grayscale(0%);
 }
 
 .insta_mentor {
@@ -624,6 +638,12 @@ section {
 
     .menti_field {
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .insta_mentor, .git_mentor{
+        display: block !important;
     }
 }
 
@@ -742,3 +762,13 @@ section {
     .accordion-item .accordion-link .fa-minus {
         background: var(--linear_gradient);
     } */
+@media only screen and (max-width: 992px) {
+    .faq *{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #faq .answer{
+        margin-left: 0px;
+    }
+}
