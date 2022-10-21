@@ -160,32 +160,6 @@ section {
     color: var(--primary-blue);
 }
 
-/* .rulebookButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-
-    width: 140px;
-    height: 36px;
-
-    background: var(--primary-blue);
-    border-radius: 20px;
-    font-weight: 100;
-    border: none;
-}
-.rulebookButton:hover{
-    background: #0F1F3D;
-}
-.navbar-toggler-icon{
-    display :contents;
-}
-.rulebookButton img{
-    height: 20px;
-} */
-
 /* ---------------------------------------------------------NAVBAR END------------------------------------------------------- */
 
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
