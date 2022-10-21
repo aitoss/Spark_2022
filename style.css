@@ -294,6 +294,9 @@ section {
 .speaker_ann{
     height: 500px;
 }
+.speaker_text{
+    text-align: center;
+}
 /* .speaker_cont {
     position: relative;
 }
