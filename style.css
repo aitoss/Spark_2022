@@ -581,20 +581,7 @@ section {
     transition: 0.7s ease-in-out;
 }
 
-/* .card-graphica {
-    background: var(--linear_gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.25em;
-    line-height: 32px;
-    letter-spacing: 0.02em;
-} */
-
 .nov {
-    /* font-family: 'Poppins'; */
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -603,7 +590,6 @@ section {
 }
 
 .inner-content {
-    /* font-family: 'Poppins'; */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -655,16 +641,13 @@ section {
 }
 
 .main-card:hover {
-    /* background-color: red; */
     background: #1B1D24;
     backdrop-filter: blur(10px);
     transition: 0.7s;
     /* transition: ease-in-out; */
 }
 
-/* #last {
-    margin-top: 30px !important;
-} */
+
 
 /* Extra small devices (phones, 400 and down) */
 @media only screen and (max-width: 400px) {
