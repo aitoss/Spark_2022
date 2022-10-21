@@ -634,7 +634,7 @@ section {
 /*---------------------------Mentor Section-----------------------------*/
 
 .menti_card {
-    margin: 1rem auto;
+    margin: 1rem 1rem;
     background: red;
     width: 200px;
     height: 200px;
@@ -670,6 +670,10 @@ section {
     height: 20px;
     position: absolute;
     transition-duration: 5s;
+}
+.menti_box .col-md-4{
+    display: flex;
+    justify-content: center;
 }
 
 .menti_card:hover .insta_mentor,
