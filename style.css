@@ -704,3 +704,12 @@ section {
     .accordion-item .accordion-link .fa-minus {
         background: var(--linear_gradient);
     } */
+
+/* -------------------footer-------------- */
+.contact_box{
+    position: absolute;
+    width: 516px;
+    height: 71px;
+    left: 702px;
+    top: 35px;
+}
