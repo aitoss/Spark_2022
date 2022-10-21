@@ -487,8 +487,9 @@ section {
     --bs-btn-border-width: none !important;
 }
 
-.btn {
-    --bs-btn-border-width: none;
+.card-buttons {
+    position: absolute;
+    bottom: 50px;
 }
 
 .rulebook:hover,
