@@ -793,10 +793,36 @@ section {
 }
 
 /* -------------------footer-------------- */
-.contact_box{
-    position: absolute;
-    width: 516px;
-    height: 71px;
-    left: 702px;
-    top: 35px;
+/* .contact_footer{
+    background: #0D0D0D;
 }
+.copy_footer{
+    height: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .7rem;
+    letter-spacing: 0.03em;
+    color: #9B9CA2;
+    background: #151515
+}
+.footer p{
+    margin: 0;
+}
+.logo_footer{
+    height: 100px;
+}
+.logo_footer p{
+    margin-left: 10px;
+}
+.new img{
+    height: 50%;
+}
+.new{
+    height: 50px;
+}
+.center_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
