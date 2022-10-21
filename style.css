@@ -683,27 +683,6 @@ section {
 
 
 /*--------------------------Mentor Section Ends------------------------*/
-/*footer */
-
-.footer1 ul {
-    color: wheat;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.footer1 ul li {
-    padding-left: 50px;
-}
-
-.footer2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-
-}
 
 /*-----------------------------------faqs section----------------------------*/
 #faq .accordion-item {
@@ -808,3 +787,67 @@ section {
         margin-left: 0px;
     }
 }
+
+/* ---------------------------------------------FAQ-------------------------------------- Ends */
+/* --------------------------------------------footer ----------------------------------------*/
+
+#footer{
+    background: var(--dark_blue);
+}
+.footer-contact-icon{
+    padding: 0.2rem;
+}
+#footer a{
+    text-decoration: none !important;
+}
+.footer-oss{
+    height: 70% !important;
+}
+.footer-left{
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+@media only screen and (max-width: 992px) {
+    .footer-oss, .footer-right > div:nth-child(2) {
+        display: none !important;
+    }
+    .footer-right{
+        order: 1;
+    }
+    .footer-left{
+        order: 2;
+    }
+    #footer{
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer-right{
+        order: 1 !important;
+    }
+    .footer-oss{
+        margin: auto auto;
+    }
+    .footer-left{
+        order: 2 !important;
+        flex-direction: row !important;
+    }
+    .footer-left > div{
+        padding: 0.69rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .footer-left{
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-left > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* --------------------------------------------footer ----------------------------------------*/
