@@ -544,7 +544,7 @@ section {
     object-fit: cover;
     transition: transform .5s ease;
     margin: auto auto;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 .menti_slip {
@@ -576,7 +576,7 @@ section {
 .menti_card:hover .mentor_pic {
     transform: scale(1.1);
     width: 100%;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 .insta_mentor {
