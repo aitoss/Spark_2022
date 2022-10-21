@@ -838,6 +838,7 @@ section {
     background-color: #4C4F54;
     transition: 650ms;
     margin-left: 4rem;
+    margin-bottom: 1rem;
 }
 
 #faq .answer::before {
