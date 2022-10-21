@@ -667,27 +667,6 @@ section {
 
 
 /*--------------------------Mentor Section Ends------------------------*/
-/*footer */
-
-.footer1 ul {
-    color: wheat;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.footer1 ul li {
-    padding-left: 50px;
-}
-
-.footer2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-
-}
 
 /*-----------------------------------faqs section----------------------------*/
 #faq .accordion-item {
@@ -793,37 +772,66 @@ section {
     }
 }
 
-/* -------------------footer-------------- */
-/* .contact_footer{
-    background: #0D0D0D;
+/* ---------------------------------------------FAQ-------------------------------------- Ends */
+/* --------------------------------------------footer ----------------------------------------*/
+
+#footer{
+    background: var(--dark_blue);
 }
-.copy_footer{
-    height: 40px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: .7rem;
-    letter-spacing: 0.03em;
-    color: #9B9CA2;
-    background: #151515
+.footer-contact-icon{
+    padding: 0.2rem;
 }
-.footer p{
-    margin: 0;
+#footer a{
+    text-decoration: none !important;
 }
-.logo_footer{
-    height: 100px;
+.footer-oss{
+    height: 70% !important;
 }
-.logo_footer p{
-    margin-left: 10px;
-}
-.new img{
-    height: 50%;
-}
-.new{
-    height: 50px;
-}
-.center_flex{
-    display: flex;
+.footer-left{
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
-    align-items: center;
-} */
+}
+@media only screen and (max-width: 992px) {
+    .footer-oss, .footer-right > div:nth-child(2) {
+        display: none !important;
+    }
+    .footer-right{
+        order: 1;
+    }
+    .footer-left{
+        order: 2;
+    }
+    #footer{
+        font-size: 16px !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .footer-right{
+        order: 1 !important;
+    }
+    .footer-oss{
+        margin: auto auto;
+    }
+    .footer-left{
+        order: 2 !important;
+        flex-direction: row !important;
+    }
+    .footer-left > div{
+        padding: 0.69rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .footer-left{
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-left > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* --------------------------------------------footer ----------------------------------------*/
