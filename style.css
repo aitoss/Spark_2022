@@ -290,7 +290,10 @@ section {
 /* ----------------------------Schedule section END--------------------------- */
 
 /* ----------------------------speaker section--------------------------- */
-.speaker_cont {
+.speaker_ann{
+    height: 500px;
+}
+/* .speaker_cont {
     position: relative;
 }
 
@@ -328,9 +331,6 @@ section {
     display: flex;
 }
 
-/* .line_content {
-    rotate: 270deg;
-} */
 
 .line_content {
     font-weight: 200;
@@ -350,6 +350,9 @@ section {
 .speaker_content {
     font-size: 16px;
     color: #ffffff;
+}
+.img_icon{
+    cursor: pointer;
 }
 .s_icon:hover{
     transition: 1s;
@@ -400,7 +403,7 @@ section {
         width: auto;
         font-size: 1.25rem;
     }
-}
+} */
 
 /* speaker section end */
 
