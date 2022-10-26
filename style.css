@@ -701,6 +701,10 @@ section {
     }
 }
 
+.event-disabled{
+    cursor : not-allowed !important;
+}
+
 
 /*---------------------------Event Section Ends-----------------------------*/
 /*---------------------------Mentor Section-----------------------------*/
@@ -777,7 +781,7 @@ section {
 }
 
 .git_mentor {
-    top: px;
+    top: 0px;
     right: 40px;
 }
 
@@ -806,49 +810,53 @@ section {
 
     color: #FFFFFF;
 } */
+.menti_card {
+    margin: 1.7rem auto;
+    width: 300px;
+    height: 300px;
+}
 
-@media only screen and (min-width: 992px) {
-    .menti_card {
-        margin: 1.7rem auto;
-        width: 300px;
-        height: 300px;
-    }
+.menti_slip {
+    padding: 8px 20px;
+    top: -80px;
+    height: 60px;
+}
 
-    .menti_slip {
-        padding: 8px 20px;
-        top: -80px;
-        height: 60px;
-    }
+.menti_slip img {
+    width: 25px;
+    height: 25px;
+}
 
-    .menti_slip img {
-        width: 25px;
-        height: 25px;
-    }
+.git_mentor {
+    top: -35px;
+    right: 20px;
+}
 
-    .git_mentor {
-        top: -35px;
-        right: 20px;
-    }
+.insta_mentor {
+    top: -35px;
+    right: 55px;
+}
 
-    .insta_mentor {
-        top: -35px;
-        right: 55px;
-    }
+.menti_name {
+    font-size: 16px;
+}
 
-    .menti_name {
-        font-size: 16px;
-    }
-
-    .menti_field {
-        font-size: 13px;
-    }
+.menti_field {
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 576px) {
-
-    .insta_mentor,
+    .menti_slip img{
+        opacity: 1;
+    }
+    .insta_mentor {
+        top: -35px;
+        right: 10px;
+    }
+    
     .git_mentor {
-        display: block !important;
+        top: -35px;
+        right: 50px;
     }
 }
 
