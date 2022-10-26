@@ -465,7 +465,7 @@ section {
 
 /* ----------------------------speaker section--------------------------- */
 .speaker_ann{
-    height: 200px;
+    height: 150px;
 }
 .speaker_text{
     text-align: center;
@@ -1021,6 +1021,11 @@ section {
     .footer-left > div{
         padding: 0.69rem;
     }
+    .footer-contact-us{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 }
 @media only screen and (max-width: 425px) {
     .footer-left{
@@ -1033,6 +1038,11 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+@media only screen and (max-width: 288px) {
+    .footer-left{
+        font-size: 14px;
     }
 }
 /* Medium devices (landscape tablets, 768px and down) */
