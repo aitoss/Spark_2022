@@ -38,6 +38,7 @@ a:hover {
 section {
     /* max-width: 1400px; */
     margin: 0 auto;
+    padding-top: 100px;
 }
 
 .container {
@@ -83,7 +84,8 @@ section {
 @media only screen and (max-width: 768px) {}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+}
 
 /* Extra small devices (phones, 400 and down) */
 @media only screen and (max-width: 400px) {}
@@ -98,6 +100,7 @@ section {
     position: fixed;
     top: 0;
     z-index: 100000000;
+    padding-top: 0px;
 }
 
 /* #nav .container, .navbar{
@@ -176,8 +179,6 @@ section {
 /* ---------------------------------------------------------Home page start------------------------------------------------------- */
 #home {
     margin-top: 100px;
-    min-height: calc(100vh - 160px);
-    padding: 100px;
 }
 
 .home_heading {
@@ -221,26 +222,11 @@ section {
     font-weight: 400;
 }
 
-/* .hero-spark-logo {
-    margin-left: 64px;
-} */
-
-@media only screen and (max-width: 767px) {
-
-    .tag,
-    .home_para {
-        display: none;
-    }
-
-    .home_para_2 {
-        display: block;
-    }
-
-    .hero-spark-logo {
-        margin: 1rem auto;
-        height: 40%;
-    }
+.home_right{
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* Extra large devices (large laptops and desktops, 1920px and down) */
 @media only screen and (max-width: 1920px) {}
@@ -248,10 +234,10 @@ section {
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media only screen and (max-width: 1200px) {
     .tag{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .home_para{
-        font-size: .8rem;
+        font-size: 1rem;
         margin-top: 0;
     }
 }
@@ -271,26 +257,47 @@ section {
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .hero-spark-logo{
         max-width: 100%;
     }
     .home{
         padding-top: 30px;
     }
+    /* .home_left{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    } */
     .home_right{
         padding-top: 20px !important;
+        height: fit-content !important;
     }
     .home_para{
         font-size: 1.1rem;
-        margin: 50px -50px 0px -50px;
+        margin: 50px 0px 0px 0px;
+    }
+    .tag,
+    .home_para {
+        display: none;
+    }
+
+    .home_para_2 {
+        display: block;
+    }
+    .home_logo{
+        width: 100%;
+    }
+    .hero-spark-logo {
+        margin: 1rem auto;
+        height: 40%;
     }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .home_para{
-        margin: 40px -20px 0px -20px;
+        margin: 40px 0px 0px 0px;
     }
 }
 
@@ -675,7 +682,11 @@ section {
         flex-wrap: wrap;
     }
 }
-
+@media only screen and (max-width: 991px) {
+    .main-card {
+        margin: 2rem 0;
+    }
+}
 
 
 /*---------------------------Event Section Ends-----------------------------*/
@@ -944,6 +955,7 @@ section {
 
 #footer{
     background: var(--dark_blue);
+    padding-top: 0px;
 }
 .footer-contact-icon{
     padding: 0.2rem;
