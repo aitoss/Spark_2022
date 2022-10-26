@@ -400,8 +400,21 @@ section {
     justify-content: center;
     align-content: center;
 }
-.sch_icons_click:hover{
+.sch_icons_click > a:hover{
     cursor: pointer;
+}
+.class-links img{
+    transition: 0.69s ease-in-out;
+    border-color: #FF5733 !important;
+    border-width: 5px !important;
+}
+.class-links img:hover{
+    /* transform: scale(110%); */
+    transition: 0.69s ease-in-out;
+    border: 100px solid #FF5733;
+}
+.disabled{
+    cursor : not-allowed !important;
 }
 @media only screen and (max-width: 991px) {
     .sch_container{
@@ -884,6 +897,7 @@ section {
     transition: 650ms;
     margin-left: 4rem;
     margin-bottom: 1rem;
+    transition: 0.2s ease-out;
 }
 
 #faq .answer::before {
