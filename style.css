@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
+/* html{    
+    scroll-padding: 10rem 0px 0px 0px;
+} */
 * {
     padding: 0;
     margin: 0;
@@ -864,6 +866,9 @@ section {
 /*--------------------------Mentor Section Ends------------------------*/
 
 /*-----------------------------------faqs section----------------------------*/
+#faq .accordion{    
+    
+}
 #faq .accordion-item {
     background-color: transparent;
     border: none;
